@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 .header{
-    margin: 23px 400px 20px 372px;
+    margin: 22px 220px 25px 212px;
     display: flex;
     justify-content: space-between;
 }
@@ -11,13 +11,17 @@
     text-decoration: none;
     color: #278cd8;
 }
+.n-home:hover{
+    color: #278cd8;
+}
 .nav-item:hover{
     text-decoration: none;
     color: black;
 }
 .nav-item{
-    margin-right: 20px;
-    font-size: 13.5px;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .nav-item:hover{
     border-top:1px solid #5ca64a;
@@ -31,8 +35,9 @@
 }
 h2{
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     color: #8a8c98;
+    font-size: 1.7rem;
 }
 .slogan{
     margin: 100px 0px 100px 0px;
@@ -41,9 +46,9 @@ h2::after{
     content: " ";
     display: block;
     height: 3px;
-    width: 200px;
+    width: 130px;
     background-color:#5ca64a;
-    margin:30px 0px 0px 890px;
+    margin:30px 0px 0px 500px;
 }
 .welcome{
     display: flex;
@@ -51,19 +56,21 @@ h2::after{
 }
 .welcome-img{
     flex: 1;
-    margin-left: 450px;
+    margin-right: 30px;
 }
 .welcome-p{
     flex: 1;
-    margin-right: 235px;
 }
 .block{
     width: 583px;
     font-weight: 900;
 }
+.block-txt{
+    font-weight: 900;
+}
 .news{
     display: flex;
-    margin: 150px 350px 100px 350px ;
+    margin: 150px 0px 100px 0px ;
     justify-content: space-between;
     font-size: 24px;
 }
@@ -71,6 +78,9 @@ h2::after{
     flex: 1;
     margin-right: 25px;
     margin-bottom: 10px;
+}
+.headline{
+    margin-right: 290px;
 }
 .headline:hover{
     text-decoration: none;
@@ -103,13 +113,20 @@ h6{
     display: flex;
     justify-content: space-between;
 }
+.slg{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    padding-left: 280px;
+    padding-top: 22px;
+}
 .fblink{
     margin-top: 20px;
-    margin-right: 350px;
+    margin-right: 290px;
 }
 .info{
     display: flex;
-    padding: 80px 400px;
+    padding: 56px 60px 56px 200px;
 }
 .info-child{
     flex: 1;
@@ -124,4 +141,163 @@ h6{
     color: white;
     transition: color 0.7s;
     text-decoration: none;
+}
+.container{
+    width: 100%;
+}
+.copyright{
+    color: white;
+    font-weight: 200;
+    padding-left: 95px;
+    padding-top: 15px;
+}
+.copyright-divider{
+    background-color: #191b29; 
+    height: 80px; 
+    width: 100%;
+}
+.info-parent{
+    background-color: #20243a; 
+    height: 315px; 
+    width: 100%;
+}
+.dropdown{
+    display: none;
+}
+.news1{
+    padding-right: 50px;
+}
+@media only screen and (min-width: 992px){
+    .nav-item{
+        display: none;
+    }   
+    h2::after{
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 130px;
+        background-color:#5ca64a;
+        margin:30px 0px 0px 430px;
+    }
+    .header{
+        margin: 15px 200px 15px 41px;
+    }
+    .dropdown{
+        display: block;
+        flex: 1;
+        order: 2;
+        margin-top: 20px;
+    }
+    .logo{
+        margin-right: 490px;
+        margin-top: 5px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .block{
+        width: 452px;
+        height: 254.25px;
+    }
+    .slg{
+        padding-left: 100px;
+    }
+    .info{
+        padding: 56px 60px 56px 50px;
+    }
+    .logo-no-slug{
+        width: 202.5px;
+        height: 30.7667px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .nav-item{
+        display: none;
+    }   
+    h2::after{
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 130px;
+        background-color:#5ca64a;
+        margin:30px 0px 0px 290px;
+    }
+    .header{
+        margin: 15px 200px 15px 41px;
+    }
+    .dropdown{
+        display: block;
+        flex: 1;
+        order: 2;
+        margin-top: 20px;
+    }
+    .logo{
+        margin-right: 330px;
+        margin-top: 5px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .block{
+        width: 367.5px;
+        height: 206.717px;
+    }
+    .slg{
+        padding-left: 100px;
+    }
+    .info{
+        padding: 56px 260px 56px 50px;
+    }
+    .info-child{
+        margin-right: 200px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .nav-item{
+        display: none;
+    }   
+    h2::after{
+        content: " ";
+        display: block;
+        height: 3px;
+        width: 130px;
+        background-color:#5ca64a;
+        margin:30px 0px 0px 190px;
+    }
+    .header{
+        margin: 15px 200px 15px 41px;
+    }
+    .dropdown{
+        display: block;
+        flex: 1;
+        order: 2;
+        margin-top: 20px;
+    }
+    .logo{
+        margin-right: 170px;
+        margin-top: 5px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .block{
+        width: 550px;
+        height: 347.05px;
+        margin-bottom: 40px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .slg{
+        padding-left: 100px;
+    }
+    .info{
+        padding: 56px 260px 56px 50px;
+    }
+    .info-child{
+        margin-right: 50px;
+    }
+    .news{
+        flex-direction: column;
+    }
 }
